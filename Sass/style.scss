@@ -1,1 +1,8 @@
-@import "./_modules-sass/header";
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+@import "./modules-sass/header"
