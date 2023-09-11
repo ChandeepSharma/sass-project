@@ -4,10 +4,14 @@ $color-white:#fff;
 $w-container-fluid:100%;
 $w-container:80%;
 
+@mixin shadow($top, $left, $blur, $color){
+    box-shadow: $top $left $blur $color;
+}
 header{
     background-color: $color-red;
     width: $w-container-fluid;
-    box-shadow: 3px 3px 10px black;
+    // box-shadow: 3px 3px 10px black;
+    @include shadow(3px, 3px, 10px, black);
     text-align: center;
     div{
         display: inline-flex;
@@ -20,7 +24,8 @@ header{
             background-color: #88daaf;
             padding: 10px;
             border-radius: 40%;
-            box-shadow: 5px -5px 5px yellowgreen;
+            // box-shadow: 5px -5px 5px yellowgreen;
+            @include shadow(5px, -5px, 10px, rgb(110, 110, 231));
         }
         ul{
             display: inline-flex;
