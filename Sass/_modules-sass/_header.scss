@@ -1,0 +1,39 @@
+// Variables 
+$color-red:red;
+$color-white:#fff;
+$w-container-fluid:100%;
+$w-container:80%;
+header{
+    background-color: $color-red;
+    width: $w-container-fluid;
+    box-shadow: 3px 3px 10px black;
+    text-align: center;
+
+    div{
+        display: inline-flex;
+        align-items: center;
+        width: $w-container;
+        h1{
+            margin-left: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            background-color: #88daaf;
+            padding: 10px;
+            border-radius: 40%;
+    box-shadow: 5px -5px 5px yellowgreen;
+
+        }
+        ul{
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: 150px;
+            li{
+                color: $color-white;
+                font-size: x-large;
+                list-style-type: none;
+                margin: 0px 25px;
+            }
+        }
+    }
+}
+

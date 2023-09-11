@@ -1,11 +1,8 @@
-body {
-  text-align: center;
-}
-
 header {
   background-color: red;
   width: 100%;
   box-shadow: 3px 3px 10px black;
+  text-align: center;
 }
 header div {
   display: inline-flex;
@@ -14,6 +11,12 @@ header div {
 }
 header div h1 {
   margin-left: 100px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  background-color: #88daaf;
+  padding: 10px;
+  border-radius: 40%;
+  box-shadow: 5px -5px 5px yellowgreen;
 }
 header div ul {
   display: inline-flex;
@@ -25,6 +28,4 @@ header div ul li {
   font-size: x-large;
   list-style-type: none;
   margin: 0px 25px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
