@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+}
+
+header {
+  background-color: red;
+  width: 100%;
+  box-shadow: 3px 3px 10px black;
+}
+header div {
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+}
+header div h1 {
+  margin-left: 100px;
+}
+header div ul {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: 150px;
+}
+header div ul li {
+  color: #fff;
+  font-size: x-large;
+  list-style-type: none;
+  margin: 0px 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
