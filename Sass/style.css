@@ -64,15 +64,26 @@ header div ul li {
 }
 #homeSass div h2 {
   font-size: 62px;
-  font-weight: 100;
   margin: 0px 0px;
   text-decoration: underline;
 }
 #homeSass div p {
+  font-size: 30px;
   color: #fff;
   width: 40%;
   text-align: center;
 }
 #homeSass div button {
-  padding: 10px 30px;
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: burlywood;
+  border-radius: 10px;
+}
+#homeSass div button:hover {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in-out;
+  transition-duration: 0.8s;
 }/*# sourceMappingURL=style.css.map */
