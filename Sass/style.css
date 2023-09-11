@@ -7,30 +7,34 @@ body {
   padding: 0;
 }
 
+header div div {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 40%;
+  margin: 20px 0px;
+  font-size: 42px;
+  color: rgb(205, 102, 50);
+  background-color: #88daaf;
+  box-shadow: 5px -5px 10px rgb(110, 110, 231);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 header {
   background-color: red;
   width: 100%;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 10px 0px aqua;
   text-align: center;
 }
 header div {
   display: inline-flex;
   align-items: center;
-  width: 80%;
-}
-header div h1 {
-  margin-left: 100px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bolder;
-  background-color: #88daaf;
-  padding: 10px;
-  border-radius: 40%;
-  box-shadow: 5px -5px 10px rgb(110, 110, 231);
+  width: 70%;
 }
 header div ul {
   display: inline-flex;
   margin-left: auto;
-  margin-right: 150px;
 }
 header div ul li {
   color: #fff;
@@ -38,4 +42,37 @@ header div ul li {
   list-style-type: none;
   margin: 0px 25px;
   text-decoration-line: underline;
+}
+
+#homeSass {
+  background-image: linear-gradient(to right, rgba(82, 24, 24, 0.5), rgba(70, 109, 7, 0.2)), url("https://images.pexels.com/photos/640781/pexels-photo-640781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  width: 100%;
+  height: 860px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  color: #6dd275;
+}
+#homeSass div {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+}
+#homeSass div h2 {
+  font-size: 62px;
+  font-weight: 100;
+  margin: 0px 0px;
+  text-decoration: underline;
+}
+#homeSass div p {
+  color: #fff;
+  width: 40%;
+  text-align: center;
+}
+#homeSass div button {
+  padding: 10px 30px;
 }/*# sourceMappingURL=style.css.map */

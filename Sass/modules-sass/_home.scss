@@ -1,0 +1,45 @@
+// variables 
+$heading-color:#6dd275;
+$color-white:#fff;
+$w-container-fluid:100%;
+$w-40:40%;
+@mixin font($size){
+    font-size: $size;
+}
+#homeSass {
+  background-image: linear-gradient(
+      to right,
+      rgba(82, 24, 24, 0.5),
+      rgba(70, 109, 7, 0.2)
+    ),
+    url("https://images.pexels.com/photos/640781/pexels-photo-640781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  width: $w-container-fluid;
+  height: 860px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  color:$heading-color;
+  div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    h2 {
+      @include font(62px);
+      margin: 0px 0px;
+      text-decoration: underline;
+    }
+    p {
+      @include font(30px);
+      color: $color-white;
+      width: $w-40;
+      text-align: center;
+    }
+    button{
+        @include font(10px);
+        padding: 10px 30px;
+    }
+  }
+}
