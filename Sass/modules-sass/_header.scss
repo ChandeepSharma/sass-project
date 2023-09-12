@@ -1,8 +1,13 @@
 // Variables 
 $color-red:red;
-$color-white:#fff;
+// $color-white:#fff;
 $w-container-fluid:100%;
 $w-container:70%;
+@mixin theme($text,$bg-color){
+    color:$text;
+    background-color: $bg-color;
+}
+
 @mixin shadow($top, $left, $blur, $color){
     box-shadow: $top $left $blur $color;
 }
@@ -18,6 +23,12 @@ $w-container:70%;
     @include shadow(5px, -5px, 10px, rgb(110, 110, 231));
     width: fit-content;
 
+}
+.dark{
+    @include theme(white,black);
+}
+.light{
+    @include theme(black,rgb(167, 240, 240));
 }
 header{
     background-color: $color-red;
@@ -36,7 +47,7 @@ header{
             display: inline-flex;
             margin-left: auto;
             li{
-                color: $color-white;
+                // color: $color-white;
                 font-size: x-large;
                 list-style-type: none;
                 margin: 0px 25px;
